@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConferenceRoom">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/conference_room_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/conference_room_add_user_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/conference_room_recyclerview"
+        android:text="@string/conference_room_add_user"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:id="@+id/conference_room_call_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/conference_room_add_user_button"
+        android:text="@string/conference_room_call"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessagesActivity">
+
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="53dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="320dp"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="10dp"
+        android:onClick="sendButton"
+        app:icon="@android:drawable/ic_menu_send" />
+
+    <ImageButton
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <ListView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="70dp"
+        android:hint="Messages will apear here" />
+
+    <EditText
+        android:id="@+id/typeText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="type here..." />
+
+</RelativeLayout>
