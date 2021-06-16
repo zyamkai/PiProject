@@ -8,7 +8,7 @@
     <string name="pisz">Pisz</string>
     <string name="Dzwon">Dzwon</string>
     <string name="wybierz_co_chcesz_zrobi">wybierz co chcesz zrobić</string>
-    <string name="add_to_conferenceroom">Add to ConferenceRoom</string>
+    <string name="add_to_conferenceroom">Add User</string>
     <string name="all_users_user_call">Call</string>
     <string name="all_users_user_name">User Name</string>
     <string name="create_conference_room">Create conference room</string>
@@ -20,4 +20,8 @@
     <string name="conference_room_call">Call</string>
     <string name="conference_menu_add_user">Add User</string>
     <string name="conference_room_add_user">Add User</string>
+    <string name="conference_room_add">Add User</string>
+    <string name="conference_room_name">Name</string>
+    <string name="all_users_add_button">Add to ConferenceRoom</string>
+    <string name="menu_create_conference">Create Conference</string>
 </resources>

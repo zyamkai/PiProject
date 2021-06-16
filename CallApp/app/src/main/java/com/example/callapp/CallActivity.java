@@ -14,7 +14,6 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.callapp.Adapters.AllUsersAdapter;
-import com.example.callapp.Models.Conference;
 import com.example.callapp.Models.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -62,8 +61,8 @@ public class CallActivity extends AppCompatActivity {
         sinchClient = Sinch.getSinchClientBuilder()
                 .context(this)
                 .userId(firebaseUser.getUid())
-                .applicationKey("f7fc6a8a-da42-419c-9d21-6fbe71860bec")
-                .applicationSecret("4w8/yj77BEOYHvSK3mGlFg==")
+                .applicationKey("YourKey")
+                .applicationSecret("YourSecret")
                 .environmentHost("clientapi.sinch.com")
                 .build();
 
@@ -157,8 +156,7 @@ public class CallActivity extends AppCompatActivity {
         }
         if(item.getItemId() == R.id.menu_go_to_conference){
             if(firebaseUser != null){
-                finish();
-                Intent i = new Intent(CallActivity.this, ConferenceRoom.class);
+                Intent i = new Intent(CallActivity.this, ConferenceActivity.class);
                 startActivity(i);
             }
         }
@@ -175,6 +173,7 @@ public class CallActivity extends AppCompatActivity {
             alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Reject", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
+                    call = incomingCall;
                     dialog.dismiss();
                     call.hangup();
                 }

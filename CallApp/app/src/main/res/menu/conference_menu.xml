@@ -2,9 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <item android:id="@+id/conference_menu_Back"
+    <item android:id="@+id/menu_create_conference"
+        android:title="@string/menu_create_conference"/>
+    <item android:id="@+id/conference_menu_back"
         android:title="@string/conference_menu_back"/>
-    <item android:id="@+id/conference_menu_logout"
-        android:title="@string/conference_menu_logout"/>
+    <item android:id="@+id/menu_logout"
+        android:title="@string/menu_logout"/>
+
 
 </menu>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CardView"
+    android:layout_margin="6dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="12dp"
+    app:contentPadding="4dp">
+
+
+    <ImageView
+        android:layout_width="78dp"
+        android:layout_height="55dp"
+        android:id="@+id/itemImage"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/todo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ConferenceItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:padding="10dp"
+            android:text="@string/conference_room_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ConferenceCallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ConferenceItemName"
+            android:text="@string/conference_room_call"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/ConferenceAddUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ConferenceItemName"
+            android:layout_marginStart="240dp"
+            android:text="@string/conference_room_add"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
