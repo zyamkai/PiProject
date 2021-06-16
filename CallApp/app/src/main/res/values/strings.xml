@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CallApp</string>
+    <string name="login">Login</string>
+    <string name="call">Call</string>
+    <string name="user_name">User Name</string>
+    <string name="type_here">type here...</string>
+    <string name="todo">todo</string>
+    <string name="pisz">Pisz</string>
+    <string name="Dzwon">Dzwon</string>
+    <string name="wybierz_co_chcesz_zrobi">wybierz co chcesz zrobić</string>
+    <string name="add_to_conferenceroom">Add to ConferenceRoom</string>
+    <string name="all_users_user_call">Call</string>
+    <string name="all_users_user_name">User Name</string>
+    <string name="create_conference_room">Create conference room</string>
+    <string name="back_to_menu">Back to Menu</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_go_to_conference_room">Go to conference room</string>
+    <string name="conference_menu_back">Back</string>
+    <string name="conference_menu_logout">Logout</string>
+    <string name="conference_room_call">Call</string>
+    <string name="conference_menu_add_user">Add User</string>
+    <string name="conference_room_add_user">Add User</string>
+</resources>
