@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.callapp.CallActivity;
+import com.example.callapp.Models.ConferenceRoom;
 import com.example.callapp.Models.User;
 import com.example.callapp.R;
 
@@ -67,6 +68,8 @@ public class   AllUsersAdapter extends RecyclerView.Adapter<AllUsersAdapter.AllU
                     ((CallActivity)context).callUser(user);
                 }
             });
+
+
         }
     }
 }
